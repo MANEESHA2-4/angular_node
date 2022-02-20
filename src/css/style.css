@@ -1,0 +1,136 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;800;900&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color:#e00909ee;
+    min-height:100vh;
+    overflow-x: hidden;
+    width:100%;
+    background-image: url("../images/bg.jpg");
+    background-repeat: no-repeat;
+    color: #363636;
+}
+.container{
+width: 1200px;
+height:100%;
+position:relative;
+margin: auto;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+
+}
+
+
+header.logo{
+    height: 75px;
+
+}
+header.logo img{
+height: 100%;
+}
+header nav{
+
+}
+header nav ul{
+list-style-type: none;
+}
+header nav ul li{
+float: left;
+}
+header nav ul li a{
+height: 75px;
+line-height: 75px;
+color:#fff;
+padding:0 10px;
+text-decoration: none;
+display: inline-block;
+font-size: 14px;
+text-transform: uppercase;
+}
+header nav ul li a:hover{
+    border-bottom: 1px solid#fff;
+}
+header.cart{
+    height: 75px;
+    width: 75px;
+    padding: 20px;
+}
+header.card img{
+    height: 100%;
+}
+.bannerSection{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+}
+.bannerSection h2{
+font-size:60px;
+margin-top: 150px;
+text-shadow: 1px 1px 2px #fff;
+}
+.bannerSection.pricebox{
+    font-size: 35px;
+    font-weight: 700;
+}
+.bannerSection button{
+    margin-top: 20px;
+    padding: 7px 15px;
+    border:1px solid #363636;
+    border-radius: 5px;
+    background-color: transparent;
+    outline:none
+}
+.bannerSection.imgbox{
+text-align: center;
+height: 450px;
+}
+.bannerSection.imgbox img{
+height: 100%;
+}
+.footerSection{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+grid-gap:30px;
+margin: 10px auto 0;
+width: 70%;
+float: right;
+}
+.footerSection.box{
+height: 80px;
+border: radius 10px;
+background-color: #fff;
+display: flex;
+justify-content: space-evenly;
+box-shadow: 0 0 10px 0 #0000007a;
+   
+}
+.footerSection .box.thumbnail{
+height: 100%;
+text-align: left;
+}
+.footerSection.box.thumbnail img{
+height: 100px;
+margin: -10px 0 0 --30px;
+}
+.footerSection.infobox{
+width: 55%;
+}
+.footerSection.infobox h5{
+font-size: 12px;
+margin-top: 15px;
+
+}
+.footerSection.infobox.stars img{
+     height: 10px;
+}
+.footerSection.infobox.price{
+font-size: 12px;
+font-weight: 800;
+}
