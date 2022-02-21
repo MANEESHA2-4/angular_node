@@ -10,69 +10,49 @@
 </head>
 
 <body>
-    <div class="container">
-        <header>
-            <div class="logo">
-                <img src="../images/logo.jpg" alt="EyeBuy" width="150" height="100" />
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="https://visionexpress.in/">Home</a></li>
-                    <li><a href="https://visionexpress.com/about-us">About US</a></li>
-                    <li><a href="https://visionexpress.in/category/eyeglasses.html">Products</a></li>
-                    <li><a href="https://www.visionexpress.in/category/all-products.html?filter=new_collection~Yes">New
-                            Arrivals</a></li>
-                    <li><a href="https://www.visionexpress.in/contact-us/">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="cart">
-                <img src="../images/cart.png" alt="cart image" width="100" height="100" />
-            </div>
-        </header>
-        <div class="bannerSection">
-            <div class="infoBox">
-                <h1>
-                    "GET THE VISION
-                    YOU DESERVE"
-                </h1>
-                <div class="pricebox">
-                    @RS.999/-
-                </div>
-                <button>
-                    Get It Now
-                </button>
-            </div>
-            <div class="imagebox">
-                <img src="../images/specs1.jpg" alt="frame image" / width="500" height="300">
-            </div>
+    <header>
+        <div class ="logo" >
+    <img src="../images/logo.jpg" alt="VISION EXPRESS" width="130" height="60"/>
+    <a href="#"><hr> VISION  EXPRESS</a>
         </div>
-        <!--bannarSection end here-->
-        <hr />
-        <!--footor section starts here-->
-        <div class="footerSection">
-            <!--box start from here-->
-            <div class="thumbnail">
-                <img src="../images/cateye2.jpg" alt="" width="400" height="250" />
-            </div>
-            <div class="infobox">
-                <h5>CATEYE FRAME</h5>
-                <div class="stars">
-                    <img src="../images/star.jpg" alt="" width="100" height="50">
-                </div>
-                <div class="price">
-                    Rs.999/-
-                    <h2>Specification</h2>
-                    <p>
-                        Eyeglass Lens Coatings with Anti-reflective.</p>
-                    <P>It can help with glare,reflections,halos around light,and make for a nicer look!!</P>
-                </div>
-            </div>
-        </div>
-        <!--box start end-->
-    </div>
-    <!--footor section end here-->
-        </div>
-</body>
-<script src="js/script.js"></script>
+    <nav class="navbar">
+        <a href="https://visionexpress.in/">HOME </a>
+        <a href="https://visionexpress.com/about-us">ABOUT US </a>
+        <a href="https://visionexpress.in/category/eyeglasses.html">PRODUCT</a>
+        <a href="https://www.visionexpress.in/category/all-products.html?filter=new_collection~Yes">NEW ARRIVAL</a>
+        <a href="https://www.visionexpress.in/contact-us/">CONTACT US</a>
 
+    </nav>
+    </header>
+    <hr>
+    <section class="container">
+            <div class="content">
+                <h2>"GET THE VISION
+                    YOU DESERVE"</h2>
+                    <p>Eyeglass Lens Coatings with Anti-reflective.It can help with glare,reflections,halos around light,and make for a nicer look!!</p>
+                    <a href="#"class="btn">add to cart</a>
+                    </div>
+                <div class="image">
+                    <img class="specs active"src="../images/cateye2.jpg" alt="" width="400" height="400">
+                    <img class="specs"src="../images/round.jpg" alt="" width="500" height="300">
+                </div>
+                <div class="left" Onclick="prev()"> < </div>
+                <div class="right"Onclick="next()"> > </div>  
+    </section>  
+    <script>
+        let specs=document.querySelectorAll('.specs');
+        let index=0;
+        function next(){
+            specs[index].classList.remove('active');
+            index=(index + 1)% specs.length;
+            specs[index].classList.add('active');
+            }
+
+        function prev(){
+            specs[index].classList.remove('active');
+            index=(index - 1 + specs.length) % specs.length;
+            specs[index].classList.add('active');
+            }
+    </script>             
+</body>
 </html>
