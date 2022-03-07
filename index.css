@@ -1,6 +1,6 @@
 :root {
-  --bright-orange: hsl(49, 77%, 52%);
-  --dark-cyan: hsl(88, 83%, 54%);
+  --bright-orange: hsl(36, 74%, 46%);
+  --dark-cyan: hsl(231, 68%, 64%);
   --very-dark-cyan: hsl(298, 89%, 51%);
 }
 * {
@@ -13,6 +13,7 @@ body,
 button {
   font-family: "Lexend Deca", sans-serif;
   background-color: aqua;
+  background-image: url("./images/bg.jpg");
 }
 
 h3 {
