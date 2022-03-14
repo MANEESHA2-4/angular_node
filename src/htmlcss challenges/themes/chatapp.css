@@ -1,0 +1,291 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  .availability {
+    color: lightgray;
+    font-size: 8px;
+    
+  }
+  body {
+    align-items: center;
+    background-color: hsl(270, 20%, 96%);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    flex-direction: column;
+  }
+  .description-head,
+  .description-text {
+    text-align: center;
+  }
+  
+  .description-head {
+    color: hsl(271, 36%, 24%);
+    margin-bottom: 20px;
+    font-weight: 500;
+  }
+  
+  .description-text {
+    color: hsl(270, 7%, 64%);
+    font-size: 14px;
+    width: 70%;
+    margin: auto;
+    font-weight: normal;
+  }
+  .greybody {
+    background-color: hsl(0, 14%, 91%);
+    width: 50%;
+    height: 400px;
+    align-self: flex-start;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    border-radius: 1000px 0px 0px 0px;
+  }
+  .name {
+    font-size: 12px;
+  }
+  .phone {
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    height: 450px;
+    margin-bottom: 40px;
+    max-height: 100%;
+    padding: 10px;
+    width: 210px; 
+  }
+  
+  .phone-header {
+    background-image: linear-gradient(
+      to right,
+      hsl(264, 100%, 61%),
+      hsl(293, 100%, 63%)
+    );
+    border-radius: 20px 20px 8px 8px;
+    height: 60px;
+    width: 100%;
+  }
+  
+  .phone-header-camera {
+    background-color: white;
+    border-radius: 0px 0px 30px 30px;
+    height: 20px;
+    width: 130px;
+    margin: auto;
+    
+  }
+  
+  .phone-header-description {
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 40px;
+    justify-content: space-between;
+    width: 100%;
+    }
+  
+  .phone-header-left {
+    display: flex;
+    width: 65%;
+    justify-content: space-around;
+  }
+  
+  
+  
+  .phone-header-description .uil-angle-left {
+    font-size: 20px;
+  }
+  
+  .phone-header-description img {
+    border: 1px solid white;
+    border-radius: 50px;
+    width: 25px;
+    
+  }
+  
+  
+  
+  
+  
+  .phone-body {
+    border-radius: 0px 0px 20px 20px;
+    background-color: hsl(270, 20%, 96%);
+    flex-grow: 1;
+    overflow: auto;
+    width: 100%;
+    
+  }
+  
+  .phone-body .message {
+    display: inline-block;
+    font-size: 8px;
+    margin-top: 7px;
+  }
+  
+  .phone-body .left p {
+    background-color: hsl(0, 14%, 91%);
+    border-radius: 10px 10px 10px 5px;
+    color: hsl(276, 55%, 52%);
+    margin-left: 10px;
+    padding: 7px;
+    
+  }
+  
+  .phone-body .right {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+  }
+  
+  .pictures {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 7px;
+    width: 100%;
+  }
+  
+  .pictures img {
+    border-radius: 10px;
+   margin-right: 10px;
+    width: 38px;
+   
+  }
+  
+  .phone-body .right p {
+    background-color: white;
+    border-radius: 10px 10px 5px 10px;
+    
+    margin-right: 10px;
+    padding: 7px;
+  }
+  .purpleBody {
+    background-image: linear-gradient(
+      to top left,
+      hsl(264, 100%, 61%),
+      hsl(293, 100%, 63%)
+    );
+    width: 50%;
+    height: 400px;
+    align-self: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    border-radius: 0 0 1000px 0px;
+  }
+  .payment {
+    align-items: center;
+    display: flex;
+    background-image: linear-gradient(
+      to left,
+      hsl(264, 100%, 61%),
+      hsl(293, 100%, 63%)
+    );
+    border-radius: 10px 10px 10px 5px;
+    color: white;
+    justify-content: space-between;
+    margin-left: 10px;
+    margin-top: 7px;
+    padding: 7px;
+    
+    width: 140px;
+  }
+  .payment-left {
+    align-items: center;
+    display: flex;
+    
+    width: 80%;
+  }
+  
+  .payment-left i {
+    color: hsl(270, 20%, 96%);
+  }
+  
+  .payment p {
+    font-size: 8px;
+    margin-left: 5px;
+  }
+  
+  .payment .amount {
+    font-size: 14px;
+    font-weight: 700;
+  }
+  
+  .type-message {
+    align-items: center;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+    margin: auto;
+    margin-top: 20px;
+    width: 90%;
+    
+  }
+  
+  .type-message p {
+    color: lightgray;
+    font-size: 10px;
+    
+    margin-left: 15px;
+  }
+  
+  .type-message .send {
+    align-items: center;
+    background-color: hsl(271, 36%, 24%);
+    border-radius: 100px;
+display: flex;
+font-size: 25px;
+justify-content: center;
+height: 30px;
+margin-right: 5px;
+    width: 30px;
+  }
+  
+  .type-message .send i {
+    color: white;
+  }
+  
+  
+  
+  
+  
+  .uil-ellipsis-v {
+    margin-right: 15px;
+  }
+  @media only screen and (min-width: 1000px) {
+    body {
+      flex-direction: row;
+    }
+  
+    .description {
+      margin-left: 100px;
+    }
+  
+    .description-head {
+      text-align: left;
+    }
+  
+    .description-text {
+      width: 400px;
+      text-align: left;
+    }
+    .greybody {
+      width: 25%;
+      height: 550px;
+    }
+    .purpleBody {
+      width: 25%;
+      border-radius: 0 0 1000px 1000px;
+      height: 550px;
+    }
+  
+    
+  }
