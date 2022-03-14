@@ -26,14 +26,14 @@
   
   .about-inner .img-box img {
     display: block;
-    width: 105%;
     height: auto;
     transform: translateX(-5%);
+    width: 105%;
   }
   
   .about-inner .card-group {
+     padding: 70px 110px;
     width: 50%;
-    padding: 70px 110px;
   }
   
   .about-inner .card-group .card:not(:last-child) {
@@ -45,9 +45,9 @@
   }
   
   .about-inner .card-group .card p {
-    max-width: 350px;
     font-size: var(--fs-p-sm);
     line-height: 2;
+    max-width: 350px; 
   }
   .access {
     padding: 75px var(--section-padding) 0;
@@ -67,20 +67,20 @@
   }
   
   .btn-group .btn {
-    font-size: var(--fs-btn);
-    letter-spacing: 1px;
-    font-weight: 500;
-    padding: 15px 35px;
-    color: white;
-    border-radius: 10em;
     border-bottom: 4px solid;
+    border-radius: 10em;
+    color: white;
+    font-size: var(--fs-btn);
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 15px 35px;
   }
   
   .btn-group .btn-primary {
     background-color: var(--cyan);
-    margin-right: 10px;
     border-color: var(--btn-border-cyan);
     box-shadow: 0 10px 30px -5px var(--btn-shadow-cyan);
+    margin-right: 10px;
   }
   
   .btn-group .btn-secondary {
@@ -155,10 +155,10 @@
   }
 
   footer {
-    padding: 45px var(--section-padding);
     background-color: var(--footer-bg);
     display: grid;
     grid-template-columns: minmax(150px, 1fr) 4fr minmax(170px, 1fr);
+    padding: 45px var(--section-padding);  
   }
   
   footer .footer-logo {
@@ -166,16 +166,16 @@
   }
   
   footer .links {
-    max-width: 500px;
     display: grid;
     grid-template-columns: repeat(3, minmax(120px, 120px));
     grid-gap: 20px 70px;
+    max-width: 500px;
   }
-  
   footer .links a {
+    color: var(--neutral-dark_blue50);
     font-size: 18px;
     font-weight: 500;
-    color: var(--neutral-dark_blue50);
+    
   }
   
   footer .links a:hover {
@@ -193,8 +193,8 @@
   }
   
   .social-link a {
-    font-size: 27px;
     color: var(--neutral-dark_blue);
+    font-size: 27px;
   }
   
   .social-link a:not(:last-child) {
@@ -203,14 +203,14 @@
 
   h1 {
     font-size: var(--fs-h1);
-    text-align: center;
     margin-bottom: 15px;
+    text-align: center;
   }
   
   h2 {
     font-size: var(--fs-h2);
-    text-align: center;
     margin-bottom: 20px;
+    text-align: center;
   }
   
   h3 {
@@ -228,15 +228,16 @@
     margin: auto;
     margin-bottom: 55px;}
     :is(header, .about, .access, .features, .download) > p {
-      max-width: 690px;
-      margin: auto;
-      text-align: center;
+    max-width: 690px;
+    margin: auto;
+    text-align: center;
     }
     
     header > p {
       font-size: var(--fs-p-lg);
+      line-height: 1.5;
       margin-bottom: 50px !important;
-      line-height: 1.5;}
+    }
 
   html {
     font-family: var(--font-family);
@@ -252,14 +253,6 @@
   :is(h1, h2, h3) {
     color: var(--neutral-dark_blue);
   }
-  
-  
-  
-  
-  
-  
-  
-  
   @media screen and (max-width: 1200px) {
     .about {
       padding: 75px var(--section-padding);
@@ -274,54 +267,48 @@
     }
   
     .about-inner .img-box img {
-      width: 80%;
       margin: auto;
       transform: translateX(0);
+      width: 80%;
     }
   
     .about-inner .card-group {
-      width: 100%;
       padding: 70px 0 0;
       text-align: center;
+      width: 100%;
     }
   
     .about-inner .card-group .card p {
       margin: auto;
     }
-  
-    /* access section */
     .access img {
       width: 80%;
     }
   }
     
     :root {
-      /* Spacing */
       --section-padding: 80px;
     }
   
    
   
   @media screen and (max-width: 992px) {
-    /* footer section */
     footer .links {
       grid-template-columns: repeat(2, minmax(120px, 120px));
       grid-gap: 20px 40px;
     }
   }
   
-  /* ----------------- /*
-   * for 768px
-  /* ----------------- */
+  
   
   @media screen and (max-width: 768px) {
-    /* header section */
+    
     .btn-group .btn-primary {
       margin-right: 0;
       margin-bottom: 25px;
     }
   
-    /* footer section */
+   
     footer {
       grid-template-columns: 1fr;
       place-items: center;
@@ -345,17 +332,17 @@
   
   @media screen and (max-width: 576px) {
     :root {
-      /* Typography */
+     
       --fs-h1: 32px;
       --fs-h2: 28px;
       --fs-p-lg: 16px;
       --fs-p-md: 16px;
   
-      /* Spacing */
+     
       --section-padding: 35px;
     }
   
-    /* header section */
+    
     header {
       background: url(../images/bg-header-mobile.png) no-repeat;
       background-size: 100%;
@@ -373,36 +360,30 @@
   
     .about-inner .card-group .card p {
       line-height: 1.5;
-    }
-  
-    /* access section */
-    .access p {
-      margin-bottom: 60px;
-    }
-  
+    }  
     .access img {
       width: 100%;
     }
   
-    /* features section */
+    
     .features .card-group {
       grid-template-columns: 1fr;
       grid-gap: 60px 30px;
     }
   
-    /* client section */
+    
     .clients {
       grid-gap: 60px 100px;
     }
   
-    /* footer section */
+    
     footer .links {
       grid-template-columns: 1fr;
       place-items: center;
     }
-  }
+  
   :root {
-    /* Colors */
+  
     --cyan: hsl(171, 66%, 44%);
     --blue: hsl(233, 100%, 69%);
     --btn-border-cyan: hsl(171, 66%, 36%);
@@ -415,7 +396,7 @@
     --neutral-dark_blue50: hsl(210, 10%, 50%);
     --neutral-blue: hsl(201, 11%, 66%);
   
-    /* Typography */
+  
     --fs-h1: 45px;
     --fs-h2: 35px;
     --fs-h3: 23px;
@@ -426,6 +407,7 @@
   
     --font-family: "Bai Jamjuree", sans-serif;
   
-    /* Spacing */
+
     --section-padding: 160px;
   }
+}

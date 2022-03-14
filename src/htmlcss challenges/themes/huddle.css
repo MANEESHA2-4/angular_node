@@ -1,9 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap");
 
-/* font-family: 'Open Sans',
-sans-serif;
-font-family: 'Poppins',
-sans-serif; */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,8 +10,8 @@ body {
   background-image: url(bg-desktop.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
   background-color: hsl(257, 40%, 49%);
+  min-height: 100vh;
 }
 
 .container {
@@ -28,9 +25,9 @@ body {
   flex-direction: column;
   justify-content: space-between;
   height: 90%;
+  min-height: 100v;
   padding-top: 40px;
-  padding-bottom: 40px;
-  margin: 0 2rem;
+  padding-bottom: 40px; 
 }
 
 .header img {
@@ -39,8 +36,8 @@ body {
 }
 
 .main {
-  display: flex;
   align-items: center;
+  display: flex;
   gap: 40px;
 }
 
@@ -60,19 +57,19 @@ body {
 }
 
 .hero-text a {
+  background: #fff;
+  border-radius: 25px;
+  box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0.8);
   display: inline-block;
   font-family: "Poppins", sans-serif;
-  background: #fff;
   padding: 13px 50px;
-  border-radius: 25px;
   text-decoration: none;
-  box-shadow: 0 8px 17px -8px rgba(0, 0, 0, 0.8);
   transition: all 0.3s ease;
 }
 
 .hero-text a:hover {
-  background-color: hsl(300, 69%, 71%);
   color: white;
+  background-color: hsl(300, 69%, 71%);
 }
 
 .social {
@@ -81,9 +78,8 @@ body {
 
 .social a i {
   color: #fff;
-  position: relative;
   font-size: 18px;
-
+  position: relative;
   transition: all 0.3s ease;
 }
 
@@ -96,15 +92,15 @@ body {
 }
 
 .social a i::after {
-  content: "";
-  position: absolute;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
   border: 2px solid white;
-  left: -14px;
+  border-radius: 50%;
   bottom: -13px;
+  content: "";
+  height: 40px;
+  left: -14px;
+  position: absolute;
   transition: all 0.3s ease;
+  width: 40px;
 }
 
 .social a:hover i {
@@ -133,8 +129,8 @@ body {
   }
 
   .hero-text h1 {
-    line-height: 1.5;
     font-size: 26px;
+    line-height: 1.5;
   }
 
   .hero-text a {
@@ -143,19 +139,19 @@ body {
 }
 /* Youtube link */
 .link {
-  position: fixed;
   background-color: #d12322;
-  padding: 23px 40px;
-  right: -100px;
   border-radius: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  transform: rotate(-90deg);
+  color: #fff;
   font-size: 18px;
   font-weight: 500;
-  color: #fff;
+  position: fixed;
+  padding: 23px 40px;
+  right: -100px;
+  top: 50%;
   text-decoration: none;
   text-transform: capitalize;
+  transform: translateY(-50%);
+  transform: rotate(-90deg);
   transition: all 0.1s ease-in-out;
 }
 
@@ -164,6 +160,6 @@ body {
 }
 
 .link:hover {
-  text-decoration: underline;
   background-color: black;
+  text-decoration: underline; 
 }

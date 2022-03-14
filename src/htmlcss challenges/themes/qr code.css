@@ -4,27 +4,28 @@
     padding: 0;
 }
 body{
-    font-family: 'Nunito', sans-serif;
-    background-color: hsl(212, 45%, 89%);
-    min-height: 100vh;
-    display: flex;
     align-items: center;
+    background-color: hsl(212, 45%, 89%);
+    display: flex;
+    font-family: 'Nunito', sans-serif;
     font-size: 15px;
+    min-height: 100vh;   
 }
-.container{
-    max-width: 360px;
+.container{ 
     margin: 0 auto;
+    max-width: 360px;
 }
 .card{
     background-color: hsl(0, 0%, 100%);
-    padding: 18px;
     border-radius: 17px;
-    text-align: center;
     margin: 0 1em;
+    padding: 18px;
+    text-align: center;
 }
 .card img{
-    width: 100%;
+    
     border-radius: 12px;
+    width: 100%;
 }
 .text{
     padding: 22px 10px;
@@ -38,20 +39,20 @@ body{
 }
 /* Youtube link */
 .link {
-  position: fixed;
-  background-color: #d12322;
-  padding: 23px 40px;
-  right: -90px;
-  border-radius: 5px;
-  top: 50%;
-  transform: translateY(-50%);
-  transform: rotate(-90deg);
-  font-size: 18px;
-  font-weight: 500;
-  color: #fff;
-  text-decoration: none;
-  text-transform: capitalize;
-  transition: all 0.1s ease-in-out;
+    background-color: #d12322;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    position: fixed;
+    padding: 23px 40px;
+    right: -90px;
+    text-decoration: none;
+    text-transform: capitalize;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    transition: all 0.1s ease-in-out;
 }
 
 .link i {
@@ -59,6 +60,6 @@ body{
 }
 
 .link:hover {
-  text-decoration: underline;
-  background-color: black;
+    background-color: black;
+    text-decoration: underline;
 }

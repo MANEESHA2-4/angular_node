@@ -1,0 +1,20 @@
+*{
+    color:rgb(12, 12, 12)
+  }
+  body {
+    background-image: url(../images/h.webp);
+    background-size:cover;
+    text-decoration: none;
+  }
+  .container {
+    margin-right: 20px;
+    margin-top: 30px;
+    text-align: right;
+    color:gray;
+    text-decoration-color: beige;
+  }
+  .para {
+    font-size: 25px;
+    color: rgb(185, 180, 180);
+    text-align: left;
+  }

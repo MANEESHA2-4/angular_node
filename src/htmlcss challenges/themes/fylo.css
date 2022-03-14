@@ -100,12 +100,12 @@ body{
     background-image: linear-gradient(to right,hsl(6, 100%, 80%),hsl(335, 100%, 65%));
 }
 .right{
-    position: relative;
-    width: 60;
     border-radius: 10px;
-    padding: 30px;
     height: 150px;
     margin-top: 45px;
+    position: relative;
+    padding: 30px;
+    width: 60;
 }
 .right-item{
     margin: 10px 0;
@@ -121,19 +121,20 @@ span{
 }
 
 .wrap{
-    width: 100%;
+    
     display: flex;
     margin: 0 auto;
     position: relative;
+    width: 100%;
 }
 .white-dot{
     background-color: #fff;
-    width: 2vmin;
-    height: 2vmin;
     border-radius: 100%;
-    position: relative;
+    height: 2vmin;
     left: 96%;
+    position: relative;
     top:0;
+    width: 2vmin;
 }
 
 @media screen and(max-width:799px){
@@ -149,10 +150,11 @@ span{
     }
     
     .wrap{
-        width: 100%;
+        
         display: block;
         margin: 0;
         position: relative;
+        width: 100%;
     }
     
     .box{
@@ -160,8 +162,9 @@ span{
     }
     
     .left{
-        width: 100%;
+       
         padding: 30px;
+        width: 100%;
     }
     
     .left-item{
@@ -170,8 +173,8 @@ span{
     
     .right{
         position: relative;
-        width: 100%;
         padding: 25px;
+        width: 100%;
     }
     
     .white-dot{
@@ -181,12 +184,12 @@ span{
     }
     
     .chat{
-        padding: 10px 20px;
         background-color: #fff;
         border-radius: 10px;
         position: absolute;
-        top: 80%;
+        padding: 10px 20px;
         right: 30%;
+        top: 80%; 
     }
     
     .chat:after{

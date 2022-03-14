@@ -1,13 +1,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
 a {
-  text-decoration: none;
   color: black;
+  text-decoration: none; 
 }
 body {
   font-family: 'Open Sans',sans-serif;
@@ -23,12 +23,7 @@ body {
 }
 
 #cards .container .card-item {
-  padding: 50px 30px;
-  -webkit-box-shadow: -2px 2px 20px 0px #00000013;
-          box-shadow: -2px 2px 20px 0px #00000013;
-  margin-bottom: 50px;
   border-radius: 10px;
-  text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,6 +31,11 @@ body {
   -webkit-box-direction: reverse;
       -ms-flex-direction: column-reverse;
           flex-direction: column-reverse;
+  padding: 50px 30px;
+  -webkit-box-shadow: -2px 2px 20px 0px #00000013;
+          box-shadow: -2px 2px 20px 0px #00000013;
+  margin-bottom: 50px;
+  text-align: center;
 }
 #cards .container .card-item .card-info {
   margin-top: 30px;
@@ -47,20 +47,20 @@ body {
 }
 
 #cards .container .card-item .card-info p {
+  color: #808d99;
   font-size: .9rem;
   font-weight: 400;
   line-height: 1.5rem;
-  color: #808d99;
 }
 .cta {
-  padding: 10px 45px;
-  border-radius: 50px;
   background-color: #ff52bf;
+  border-radius: 50px;
   color: white;
   font-weight: 700;
   -webkit-box-shadow: -2px 2px 20px 0px #0000001f;
           box-shadow: -2px 2px 20px 0px #0000001f;
   font-size: .9rem;
+  padding: 10px 45px;
 }
 
 #cta-card {
@@ -72,13 +72,13 @@ body {
 }
 
 #cta-card .container .card {
-  width: 100%;
+  background-color: white;
+  border-radius: 10px;
   padding: 30px;
   text-align: center;
   -webkit-box-shadow: -2px 2px 20px 0px #00000013;
           box-shadow: -2px 2px 20px 0px #00000013;
-  background-color: white;
-  border-radius: 10px;
+  width: 100%;
 }
 
 #cta-card .container .card h2 {
@@ -92,7 +92,6 @@ body {
 }
 
 #footer .container {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -100,6 +99,8 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  width: 100%;
+  
 }
 #footer .container .footer-info {
   display: -webkit-box;
@@ -169,15 +170,15 @@ body {
   color: white;
 }
 #footer .container .footer-info .footer-4 {
-  margin-top: 80px;
-  text-align: center;
   font-size: 40px;
+  margin-top: 80px;
+  text-align: center; 
 }
 
 #footer .container .footer-copyright {
+  font-size: .8rem;
   margin-top: 20px;
   text-align: center;
-  font-size: .8rem;
 }
 img {
   height: 100%;
@@ -187,19 +188,19 @@ h1, h2, h3 {
   font-family: 'Poppins', sans-serif;
 }
 #header {
-  width: 100%;
-  min-height: 100vh;
-  padding: 100px 0;
-  display: block;
   background-image: url(../images/bg-hero-mobile.svg);
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
   background-color: #ebfbff;
+  display: block;
+  padding: 100px 0;
+  min-height: 100vh;
+  width: 100%;
 }
 
 #header .container {
-  min-height: calc(100vh - 200px);
+  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,25 +214,26 @@ h1, h2, h3 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  min-height: calc(100vh - 200px);
   text-align: center;
 }
 
 #header .container .nav {
-  position: absolute;
-  top: 0;
-  width: 100%;
-  max-width: 1080px;
-  margin: 0 auto;
-  padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex;
+  display: flex; 
+  justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 30px; 
+  position: absolute;
+  top: 0;    
+  width: 100%;
 }
 
 #header .container .nav .logo {
@@ -244,11 +246,11 @@ h1, h2, h3 {
 }
 
 #header .container .hero {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+  width: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -260,7 +262,6 @@ h1, h2, h3 {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-
 #header .container .hero .hero-info h1 {
   font-size: 1.8rem;
   font-weight: 600;
@@ -274,8 +275,9 @@ h1, h2, h3 {
 }
 
 #header .container .hero .hero-info .cta-hero {
-  padding: 15px 50px;
   font-size: 1rem;
+  padding: 15px 50px;
+  
 }
 
 #header .container .hero .hero-img img {
@@ -326,8 +328,8 @@ h1, h2, h3 {
   }
   #cta-card .container .card a {
     display: inline-block;
-    padding: 20px 60px;
     font-size: 1.2rem;
+    padding: 20px 60px;
   }
   #footer .container .footer-info {
     -webkit-box-orient: horizontal;

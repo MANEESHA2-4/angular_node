@@ -1,6 +1,7 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
+    
   }
   .availability {
     color: lightgray;
@@ -24,27 +25,28 @@
   
   .description-head {
     color: hsl(271, 36%, 24%);
-    margin-bottom: 20px;
     font-weight: 500;
+    margin-bottom: 20px;
+    
   }
   
   .description-text {
     color: hsl(270, 7%, 64%);
     font-size: 14px;
-    width: 70%;
-    margin: auto;
     font-weight: normal;
+    margin: auto;
+    width: 70%;
   }
   .greybody {
-    background-color: hsl(0, 14%, 91%);
-    width: 50%;
-    height: 400px;
     align-self: flex-start;
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
+    background-color: hsl(0, 14%, 91%);
     border-radius: 1000px 0px 0px 0px;
+    bottom: 0;
+    height: 400px; 
+    position: fixed;
+    right: 0;
+    width: 50%;
+    z-index: -1;
   }
   .name {
     font-size: 12px;
@@ -76,8 +78,8 @@
     background-color: white;
     border-radius: 0px 0px 30px 30px;
     height: 20px;
-    width: 130px;
     margin: auto;
+    width: 130px;
     
   }
   
@@ -92,8 +94,8 @@
   
   .phone-header-left {
     display: flex;
-    width: 65%;
     justify-content: space-around;
+    width: 65%;
   }
   
   
@@ -108,11 +110,6 @@
     width: 25px;
     
   }
-  
-  
-  
-  
-  
   .phone-body {
     border-radius: 0px 0px 20px 20px;
     background-color: hsl(270, 20%, 96%);
@@ -152,7 +149,7 @@
   
   .pictures img {
     border-radius: 10px;
-   margin-right: 10px;
+    margin-right: 10px;
     width: 38px;
    
   }
@@ -160,24 +157,24 @@
   .phone-body .right p {
     background-color: white;
     border-radius: 10px 10px 5px 10px;
-    
     margin-right: 10px;
     padding: 7px;
   }
   .purpleBody {
+    align-self: flex-start;
     background-image: linear-gradient(
       to top left,
       hsl(264, 100%, 61%),
       hsl(293, 100%, 63%)
     );
-    width: 50%;
+    border-radius: 0 0 1000px 0px;
     height: 400px;
-    align-self: flex-start;
+    left: 0;
     position: fixed;
     top: 0;
-    left: 0;
+    width: 50%;
     z-index: -1;
-    border-radius: 0 0 1000px 0px;
+    
   }
   .payment {
     align-items: center;
@@ -241,22 +238,17 @@
     align-items: center;
     background-color: hsl(271, 36%, 24%);
     border-radius: 100px;
-display: flex;
-font-size: 25px;
-justify-content: center;
-height: 30px;
-margin-right: 5px;
+    display: flex;
+    font-size: 25px;
+    justify-content: center;
+    height: 30px;
+    margin-right: 5px;
     width: 30px;
   }
   
   .type-message .send i {
     color: white;
   }
-  
-  
-  
-  
-  
   .uil-ellipsis-v {
     margin-right: 15px;
   }
