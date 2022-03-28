@@ -1,16 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 a {
   color: black;
-  text-decoration: none; 
+  text-decoration: none;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
 }
 body {
-  font-family: 'Open Sans',sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
 }
 .container {
@@ -24,17 +31,16 @@ body {
 
 #cards .container .card-item {
   border-radius: 10px;
+  box-orient: vertical;
+  box-direction: reverse;
+  box-shadow: -2px 2px 20px 0px #00000013;
+  box-shadow: -2px 2px 20px 0px #00000013;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: column-reverse;
-          flex-direction: column-reverse;
-  padding: 50px 30px;
-  -webkit-box-shadow: -2px 2px 20px 0px #00000013;
-          box-shadow: -2px 2px 20px 0px #00000013;
+  flex-direction: column-reverse;
   margin-bottom: 50px;
+  padding: 50px 30px;
   text-align: center;
 }
 #cards .container .card-item .card-info {
@@ -48,18 +54,17 @@ body {
 
 #cards .container .card-item .card-info p {
   color: #808d99;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 400;
   line-height: 1.5rem;
 }
 .cta {
   background-color: #ff52bf;
   border-radius: 50px;
+  box-shadow: -2px 2px 20px 0px #0000001f;
   color: white;
   font-weight: 700;
-  -webkit-box-shadow: -2px 2px 20px 0px #0000001f;
-          box-shadow: -2px 2px 20px 0px #0000001f;
-  font-size: .9rem;
+  font-size: 0.9rem;
   padding: 10px 45px;
 }
 
@@ -74,10 +79,9 @@ body {
 #cta-card .container .card {
   background-color: white;
   border-radius: 10px;
+  box-shadow: -2px 2px 20px 0px #00000013;
   padding: 30px;
   text-align: center;
-  -webkit-box-shadow: -2px 2px 20px 0px #00000013;
-          box-shadow: -2px 2px 20px 0px #00000013;
   width: 100%;
 }
 
@@ -92,27 +96,23 @@ body {
 }
 
 #footer .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-orient: vertical;
+  box-direction: normal;
+  display: box;
+  display: flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   width: 100%;
-  
 }
 #footer .container .footer-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  box-orient: vertical;
+  box-direction: normal;
+  display: box;
+  display: flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
+  box-pack: start;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 
 #footer .container .footer-info .footer-1 {
@@ -132,15 +132,14 @@ body {
 }
 
 #footer .container .footer-info .footer-1 ul li .contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
+  align-items: start;
+  box-align: start;
+  box-pack: start;
+  display: box;
+  display: flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: start;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
+  -ms-flex-pack: start;
+  justify-content: start;
 }
 
 #footer .container .footer-info .footer-1 ul li .contact img {
@@ -151,20 +150,22 @@ body {
 #footer .container .footer-info .footer-1 ul li .contact p {
   font-size: 1.2rem;
   margin-left: 20px;
-  -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  box-flex: 1;
+  flex: 1;
 }
 
-#footer .container .footer-info .footer-2 ul, #footer .container .footer-info .footer-3 ul {
+#footer .container .footer-info .footer-2 ul,
+#footer .container .footer-info .footer-3 ul {
   list-style: none;
 }
 
-#footer .container .footer-info .footer-2 ul li, #footer .container .footer-info .footer-3 ul li {
+#footer .container .footer-info .footer-2 ul li,
+#footer .container .footer-info .footer-3 ul li {
   margin-top: 18px;
 }
 
-#footer .container .footer-info .footer-2 ul li a, #footer .container .footer-info .footer-3 ul li a {
+#footer .container .footer-info .footer-2 ul li a,
+#footer .container .footer-info .footer-3 ul li a {
   text-decoration: none;
   font-size: 1.2rem;
   color: white;
@@ -172,11 +173,11 @@ body {
 #footer .container .footer-info .footer-4 {
   font-size: 40px;
   margin-top: 80px;
-  text-align: center; 
+  text-align: center;
 }
 
 #footer .container .footer-copyright {
-  font-size: .8rem;
+  font-size: 0.8rem;
   margin-top: 20px;
   text-align: center;
 }
@@ -184,7 +185,9 @@ img {
   height: 100%;
   width: 100%;
 }
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-family: 'Poppins', sans-serif;
 }
 #header {
@@ -200,20 +203,19 @@ h1, h2, h3 {
 }
 
 #header .container {
-  
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-orient: vertical;
+  box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
   min-height: calc(100vh - 200px);
   text-align: center;
 }
@@ -221,18 +223,18 @@ h1, h2, h3 {
 #header .container .nav {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; 
+  display: flex;
   justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
+  box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-pack: justify;
+  -ms-flex-pack: justify;
   max-width: 1080px;
   margin: 0 auto;
-  padding: 30px; 
+  padding: 30px;
   position: absolute;
-  top: 0;    
+  top: 0;
   width: 100%;
 }
 
@@ -251,16 +253,16 @@ h1, h2, h3 {
   display: flex;
   height: 100%;
   width: 100%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  box-orient: vertical;
+  box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 #header .container .hero .hero-info h1 {
   font-size: 1.8rem;
@@ -277,28 +279,27 @@ h1, h2, h3 {
 #header .container .hero .hero-info .cta-hero {
   font-size: 1rem;
   padding: 15px 50px;
-  
 }
 
 #header .container .hero .hero-img img {
   max-width: 600px;
   margin-top: 40px;
   -o-object-fit: contain;
-     object-fit: contain;
+  object-fit: contain;
 }
 @media only screen and (min-width: 768px) {
   #cards .container .card-item {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    box-orient: horizontal;
+    box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     padding: 50px 100px;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     text-align: left;
   }
   #cards .container .card-item .card-info {
@@ -311,10 +312,10 @@ h1, h2, h3 {
     font-size: 1rem;
   }
   #cards .container .card-item:nth-child(even) {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: reverse;
-        -ms-flex-direction: row-reverse;
-            flex-direction: row-reverse;
+    box-orient: horizontal;
+    box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
   }
   #cards .container .card-item:nth-child(even) .card-info {
     margin-left: 50px;
@@ -332,24 +333,24 @@ h1, h2, h3 {
     padding: 20px 60px;
   }
   #footer .container .footer-info {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    box-orient: horizontal;
+    box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
   }
   #footer .container .footer-info .footer-1,
   #footer .container .footer-info .footer-2,
   #footer .container .footer-info .footer-3,
   #footer .container .footer-info .footer-4 {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
+    box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     margin-left: 50px;
   }
   #footer .container .footer-info .footer-1 {
-    -webkit-box-flex: 2.5;
-        -ms-flex: 2.5;
-            flex: 2.5;
+    box-flex: 2.5;
+    -ms-flex: 2.5;
+    flex: 2.5;
     margin: 0;
   }
   #footer .container .footer-info .footer-2,
@@ -369,21 +370,21 @@ h1, h2, h3 {
     background-size: cover;
   }
   #header .container .hero {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    box-orient: horizontal;
+    box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
     text-align: left;
   }
   #header .container .hero .hero-img {
     -webkit-box-flex: 3;
-        -ms-flex: 3;
-            flex: 3;
+    -ms-flex: 3;
+    flex: 3;
   }
   #header .container .hero .hero-info {
-    -webkit-box-flex: 2;
-        -ms-flex: 2;
-            flex: 2;
+    box-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
     margin-right: 50px;
   }
   #header .container .hero .hero-info h1 {

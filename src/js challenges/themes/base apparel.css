@@ -1,187 +1,198 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,600&display=swap');
+
+:root {
+  --red: hsl(0, 93%, 68%);
+  --red-light: hsl(0, 36%, 70%);
+  --dark: hsl(0, 6%, 24%);
+}
+
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0%;
 }
+
 body {
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 16px;
+  background: url('./images/bg-pattern-desktop.svg'),
+    linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  background-size: inherit;
+  background-position-x: 8rem;
+  font-size: 16px;
+  font-family: 'Josefin Sans', sans-serif;
+  height: 100vh;
+  min-height: 100vh;
 }
-header {
-	position: absolute;
-	height: auto;
-	width: 100%;
-	padding: 30px;
+
+.d-flex {
+  display: flex !important;
 }
-header img {
-	width: 150px;
+
+.d-flex-inline {
+  display: inline-flex !important;
 }
+
 .container {
-	padding-top: 100px;
-	min-height: 100vh;
-	width: 100%;
-	display: flex;
-	flex-direction: column-reverse;
-	justify-content: flex-end;
-	align-items: center;
-	background-image: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
-	padding-bottom: 50px;
-}
-.container .left {
-	width: 100%;
-	padding: 50px 30px 0 30px;
-}
-.container .right {
-	width: 100%;
-	height: 300px;
-	background-image: url(../images/hero-mobile.jpg);
-	background-size: cover;
-}
-.container .right img {
-	width: 100%;
-	height: 100%;
-}
-.container .left h1 {
-	letter-spacing: .5rem;
-	text-align: center;
-	font-size: 3.2rem;
-	font-weight: 200;
-	text-transform: uppercase;
-	color: hsl(0, 36%, 70%);
-	line-height: 3.5rem;
-}
-.container .left h1 span {
-	color: hsl(0, 6%, 24%);
-	font-weight: 700;
-}
-.container .left p {
-	max-width: 450px;
-	text-align: center;
-	color: hsl(0, 36%, 70%);
-	font-size: .9rem;
-	line-height: 1.5rem;
-	margin: 20px auto 40px auto;
-}
-.container form {
-	position: relative;
-	display: block;
-	height: 50px;
-	width: 100%;
-	max-width: 400px;
-	margin: 0 auto;
-}
-.container form input {
-	position: absolute;
-	width: 100%;
-	outline: none;
-	border: 1px solid hsl(0, 36%, 70%);
-	height: 100%;
-	border-radius: 50px;
-	padding-left: 30px;
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 1.1rem;
-}
-.container form label {
-	visibility: hidden;
-	position: absolute;
-}
-.container form button {
-	cursor: pointer;
-	position: absolute;
-	right: 0;
-	border: none;
-	outline: none;
-	color: white;
-	width: 70px;
-	height: 100%;
-	border-radius: 50px;
-	background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-	box-shadow: 0px 0px 18px 1px #f4aaab82;
-	transition: .3s ease box-shadow;
-}
-.container form button:hover {
-	background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsla(0, 52%, 80%, 0.781));
-	box-shadow: 0px 0px 13px 2px #f4aaabbf;
-}
-.container form input::placeholder {
-	color: hsl(0, 36%, 70%);
-	font-family: 'Josefin Sans', sans-serif;
-	font-size: 1.1rem;
-	opacity: .8;
-}
-.container form .error-icon {
-	display: inline-block;
-	position: absolute;
-	right: 85px;
-	top: 24%;
-	display: none;
-}
-.container form .error-text {
-	position: absolute;
-	left: 30px;
-	top: 40px;
-	font-size: 1rem;
-	display: none;
-}
-.container form.error .error-icon,
-.container form.error .error-text {
-	display: block;
-}
-.container form.error input {
-	border: 2px solid hsl(0, 93%, 68%);
+  padding: 0 12rem;
+  max-width: 55%;
+  height: auto;
 }
 
-footer {
-	padding: 10px 0;
-	background-color: black;
-	color: white;
-	text-align: center;
-	font-size: .8rem;
-	line-height: 1.2rem;
-}
-footer a {
-	color: aqua;
-	text-decoration: none;
+.logo {
+  margin-top: 3rem;
 }
 
-@media only screen and (min-width: 768px) {
-	header {
-		padding-left: 10%;
-	}
-	.container {
-		padding-top: 0;
-		flex-direction: row;
-		padding-bottom: 0;
-	}
-	.container .right {
-		width: 80%;
-		height: 100vh;
-		background-image: url(../images/hero-desktop.jpg);
-	}
-	.container .left {
-		padding-top: 28vh;
-		width: 100%;
-		height: 100vh;
-		padding-left: 10%;
-		background-image: url(../images/bg-pattern-desktop.svg);
-		background-size: cover;
-		background-position: center;
-	}
-	.container .left h1 {
-		text-align: left;
-		font-size: 5rem;
-		line-height: 5.5rem;
-	}
-	.container .left p {
-		margin-left: 0;
-		text-align: left;
-		font-size: 1.1rem;
-	}
-	.container form {
-		margin-left: 0;
-	}
-	.container form button {
-		width: 80px;
-	}
+.image-container {
+  height: 100vh;
+  float: right;
+}
+
+.image-container img.hero-desktop {
+  height: 100%;
+}
+
+.image-container img.hero-mobile {
+  display: none;
+}
+
+.content {
+  margin-top: 5.5rem;
+}
+
+.content h1 {
+  color: var(--dark);
+  font-family: inherit;
+  font-size: 3rem;
+  font-weight: 600;
+  letter-spacing: 1rem;
+  text-transform: uppercase;
+  line-height: 3.5rem;
+}
+
+.content h1 span {
+  display: block;
+}
+
+.content h1 span.text-pink {
+  color: var(--red-light);
+  font-weight: 300;
+}
+
+.content p {
+  color: var(--red-light);
+  line-height: 1.8rem;
+  margin-top: 1.2rem;
+}
+
+.form-group {
+  margin-top: 2.5rem;
+  height: 3rem;
+  position: relative;
+}
+
+.form-group input {
+  border: 1px solid var(--red-light);
+  border-radius: 2rem;
+  color: var(--red-light);
+  padding: 0.2rem 1.5rem;
+  height: 100%;
+  width: 100%;
+}
+
+.form-group button {
+  background: linear-gradient(90deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: 0;
+  border-radius: 2rem;
+  box-shadow: 0 5px 20px 3px hsl(0, 80%, 86%);
+  position: absolute;
+  height: 100%;
+  width: 5rem;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: var(--red-light);
+}
+
+input:focus,
+button:focus {
+  outline: none;
+}
+
+.text-error {
+  color: var(--red) !important;
+  margin: 0;
+  margin-top: 0.5rem !important;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.text-success {
+  color: #44d838 !important;
+  margin: 0;
+  margin-top: 0.5rem !important;
+  margin-left: 1rem;
+  text-align: left;
+}
+
+.icon-error {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 5.8rem;
+  display: none;
+}
+
+/*
+* MOBILE SITE
+*/
+
+@media screen and (max-width: 1020px) {
+  body {
+    background-color: var(--dark);
+  }
+
+  .clear-fix {
+    clear: both;
+  }
+
+  .container {
+    margin: 0;
+    height: auto;
+    /* width: 100%; */
+    min-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .logo {
+    margin: 2rem 0;
+  }
+
+  .image-container {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .image-container img.hero-desktop {
+    display: none;
+  }
+
+  .image-container img.hero-mobile {
+    display: block;
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 5rem 1rem;
+    text-align: center;
+  }
+
+  .content h1 {
+    font-size: 2.5rem;
+  }
 }

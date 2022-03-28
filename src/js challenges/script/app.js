@@ -6,9 +6,6 @@ let myCheckbox = document.querySelector(".switch input"),
     
 // generate price on switch
 switcher.onclick = function(){
-
-    
-
     if(myCheckbox.checked == true){
         
         let priceInt = parseInt(price.textContent);

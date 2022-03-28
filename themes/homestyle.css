@@ -1,27 +1,27 @@
-*{
+* {
   margin: 100;
   padding: 100;
 }
-body{
-  background-image: url("../images/Js.jpg");
-  font-family: "Lexend Deca", sans-serif;
+body {
+  background-image: url('../images/Js.jpg');
+  font-family: 'Lexend Deca', sans-serif;
   width: 1000px;
 }
-h2{
+h2 {
   font-family: 'Courier New', monospace;
-    
+  text-align: center;
 }
 table {
   border-collapse: collapse;
   font-family: arial, sans-serif;
   width: 100%;
 }
-td, th {
+td,
+th {
   border: 1px solid #0e0d0d;
   padding: 8px;
   text-align: center;
 }
-
 tr:nth-child(even) {
-  background-color:white;
+  background-color: white;
 }

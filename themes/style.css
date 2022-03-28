@@ -7,14 +7,14 @@
     text-decoration: none;
   }
   .container {
+    color:gray;
     margin-right: 20px;
     margin-top: 30px;
     text-align: right;
-    color:gray;
     text-decoration-color: beige;
   }
   .para {
-    font-size: 25px;
     color: rgb(185, 180, 180);
+    font-size: 25px;
     text-align: left;
   }
