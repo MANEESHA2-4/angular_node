@@ -1,6 +1,6 @@
-import { myFunction } from "./money.js";
-import { getOptions } from "./handlers.js";
-import { currencies } from "./currency.js";
+import { currencies } from './currency.js';
+import { getOptions } from './handlers.js';
+import { myFunction } from './money.js';
 const primaryCurrency = document.getElementById('primary');
 const secondaryCurrency = document.getElementById('secondary');
 primaryCurrency.innerHTML = getOptions(currencies);
